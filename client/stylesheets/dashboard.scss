@@ -1,0 +1,133 @@
+@import "variables";
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  text-rendering: geometricPrecision;
+}
+
+.text-center {
+  text-align: center;
+}
+
+// User Info
+.user-info {
+  background: white;
+  padding: 10px 30px;
+  display: inline-block;
+
+  .user-pic {
+    width: 100%; 
+    text-align: left;
+    .user-img {
+      width: 80px;
+      padding-top: 30px;
+      height: auto;
+      border-radius: 80px;
+      margin: 0 auto;
+      display: inline-block;
+    }
+  }
+
+  .user-text {
+    width: 100%;
+    h1 {
+      width: 100%;
+      font-weight: 400; 
+      color: $text-color;
+      padding-top: 10px;
+      font-size: 1.3em;
+      line-height: 1.4em;
+      display: block;
+      span {
+        color: #00A4CE;
+      }
+    }
+
+    p {
+      color: $text-color;
+      opacity: 0.8;
+    }
+  }
+}
+
+// Analytics
+.actions {
+  width: 100%; 
+  display: inline-block;
+  border-top: 1px solid rgba(52, 57, 58, 0.1);
+
+  .box {
+    width: 50%;
+    padding: 25px 30px;
+    float: left;
+    border-bottom: 1px solid rgba(52, 57, 58, 0.1);
+
+    h2 {
+      font-weight: 300;
+      color: #3C495B;
+      font-size: 2.1em;
+      margin-bottom: 2px;
+    }
+    .green {
+      color: #2ecc71;
+    }
+    .blue {
+      color: #00A4CE;
+    }
+    .units {
+      color: #849195;
+      font-size: 0.6em;
+      padding-left: 5px;
+    }
+    p {
+      color: #849195;
+      opacity: 0.8;
+      font-weight: 400;
+      letter-spacing: 0.5px;
+      margin-bottom: 10px;
+    }
+
+    progress {
+      width: 100%;
+      -webkit-appearance: none;
+      appearance: none;
+      height: 5px;
+    }
+    progress[value]::-webkit-progress-bar {
+      background-color: rgba(52, 57, 58, 0.2);
+    }
+    progress[value]::-webkit-progress-value {
+      background-color: #00A4CE;
+    }
+  }
+
+  .box-left {
+    border-right: 1px solid rgba(52, 57, 58, 0.1);
+  }
+}
+
+// Buttons
+.user-buttons{
+  padding: 10px 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

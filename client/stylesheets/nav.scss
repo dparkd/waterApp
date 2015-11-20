@@ -1,0 +1,15 @@
+@import "variables";
+
+.bar-nav {
+  background: white;
+  border-bottom: 0;
+
+  .title {
+    color: $text-color;
+  }
+
+  .icon-bars {
+    color: $text-color;
+    padding-left: 10px;
+  }
+}

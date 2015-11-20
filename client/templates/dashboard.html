@@ -1,0 +1,65 @@
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600' rel='stylesheet' type='text/css'>
+</head>
+
+<template name="dashboard">
+  {{>navbar}}
+  
+  <div class="content user-content">
+
+    <div class="user-info">
+      <div class="user-pic">
+        <img src="{{currentUser.profile.pic_url}}" alt="" class="user-img">
+      </div>
+      <div class="user-text">
+        <h1>Hello {{currentUser.profile.name}},<br> <span>water</span> you going to do today?</h1>
+        <!-- <a id="logout">logout</a> -->
+      </div>
+    </div>
+
+    <div class="actions">
+      <div class="refill box box-left">
+        <p>You Refilled:</p>
+        <h2 class="blue">500<span class="units">ml</span></h2>
+        <!-- <progress max="100" value="30">
+        </progress> -->
+      </div>
+      <div class="buy box">
+        <p>You Purchased:</p>
+        <h2 class="blue">1200<span class="units">ml</span></h2>
+        <!-- <progress max="100" value="45">
+        </progress> -->
+      </div>
+      <div class="refill box box-left">
+        <p>You Saved:</p>
+        <h2 class="green">52.10<span class="units">usd</span></h2>
+      </div>
+      <div class="buy box">
+        <p>You Spent:</p>
+        <h2 class="green">22.10<span class="units">usd</span></h2>
+      </div>
+    </div>
+
+    <div class="user-buttons">
+      <p>hellow world</p>
+      <span class="icon icon-plus"></span>
+    </div>
+    
+    <!-- {{>addPoint}} -->
+  </div>
+</template>
+
+<template name="addPoint">
+  {{currentUser.profile.name}}
+
+  <p>Bottles: {{currentUser.profile.bottles}}</p>
+  <p>Refills: {{currentUser.profile.refills}}</p>
+  <button id="addRefill">Add Refill</button>
+  <button id="addBottle">Add Bottle</button>
+</template>
+
+<template name="navbar">
+  <header class="bar bar-nav">
+    <a class="icon icon-bars pull-left"></a>
+  </header>
+</template>
